@@ -1,5 +1,5 @@
 # NOTE: update this with your service name
-service: serverless-nodejs-starter
+service: serverless-nodejs-starter-v1
 
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
@@ -27,8 +27,14 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/app.serverlessApp
     events:
       - http:
-          path: hello
+          path: /
+          method: get
+      - http:
+          path: ping
+          method: get
+      - http:
+          path: v1/hello
           method: get
