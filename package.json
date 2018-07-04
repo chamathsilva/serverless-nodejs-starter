@@ -6,7 +6,9 @@
   "scripts": {
     "start": "serverless offline start",
     "deploy": "serverless deploy -v",
-    "test": "NODE_ENV=test jest --coverage /*.test.js"
+    "test": "NODE_ENV=test jest --coverage /*.test.js",
+    "eslint": "eslint 'src/**/*.js'",
+    "eslint-fix": "eslint 'src/**/*.js' --fix"
   },
   "author": "",
   "license": "MIT",
@@ -27,7 +29,10 @@
     "serverless-webpack": "^5.1.0",
     "webpack": "^4.2.0",
     "webpack-node-externals": "^1.6.0",
-    "supertest": "^3.1.0"
+    "supertest": "^3.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",

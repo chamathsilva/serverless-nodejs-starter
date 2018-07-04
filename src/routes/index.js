@@ -1,11 +1,11 @@
 // Core modules
-import {Router} from 'express';
+import { Router } from 'express';
 
 // Custom modules
 import HelloApi from './hello/helloApi';
 
 
-const helloApi = new HelloApi()
+const helloApi = new HelloApi();
 
 const router = Router();
 

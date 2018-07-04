@@ -1,6 +1,6 @@
 import HttpStatus from 'http-status-codes';
 import request from 'supertest';
-import {app} from '../../../app';
+import { app } from '../../../app';
 
 
 describe('routes: get /v1/hello', () => {

@@ -1,6 +1,6 @@
 import request from 'supertest';
 import HttpStatus from 'http-status-codes';
-import {app} from '../src/app';
+import { app } from '../src/app';
 
 describe('app test', () => {
   beforeEach(() => {

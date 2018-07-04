@@ -7,8 +7,8 @@ class HelloApi {
     this.router.get('/hello', this.hello);
   }
 
-  async hello(req, res, next) {
-      res.status(HttpStatus.OK).send("HI");    
+  async hello(req, res) {
+    res.status(HttpStatus.OK).send('HI');
   }
 }
 
