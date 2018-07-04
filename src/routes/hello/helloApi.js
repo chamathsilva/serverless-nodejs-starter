@@ -8,12 +8,7 @@ class HelloApi {
   }
 
   async hello(req, res, next) {
-    try {
-      res.status(HttpStatus.OK).send("HI");
-    } catch (error) {
-      next(error);
-    //   todo
-    }
+      res.status(HttpStatus.OK).send("HI");    
   }
 }
 

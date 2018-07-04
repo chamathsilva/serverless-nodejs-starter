@@ -33,8 +33,5 @@ functions:
           path: /
           method: get
       - http:
-          path: ping
-          method: get
-      - http:
           path: v1/hello
           method: get

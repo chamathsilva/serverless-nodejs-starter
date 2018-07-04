@@ -28,14 +28,8 @@ app.get('/', (req, res) => {
     res.status(HttpStatus.OK).send('Your function executed successfully!');
 });
 
-app.get('/ping', (req, res) => {
-    res.status(HttpStatus.OK).send('pong');
-});
-
-
 // Set Express router with API version prefix
 app.use("/v1/", router)
-
 
 // wrap and export express API for serverless framework.
 exports.serverlessApp = serverless(app)
